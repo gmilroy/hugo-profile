@@ -17,3 +17,7 @@ hugo.linux
 
 # Temporary lock file while building
 .hugo_build.lock
+
+# all the shite in the Mac file system
+.DS_Store
+.obsidian
