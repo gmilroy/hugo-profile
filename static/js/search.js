@@ -17,7 +17,7 @@ async function searchOnChange(evt) {
     document.getElementById("search-content").style.left =
       searchButtonPosition.left + "px";
 
-    let searchJson = await fetch("/index.json").then((res) => res.json());
+    let search = await fetch("/index.json").then((res) => res.json());
     let searchResults = searchJson.filter((item) => {
       let res = false;
       if (item.title && item.description && item.content) {
